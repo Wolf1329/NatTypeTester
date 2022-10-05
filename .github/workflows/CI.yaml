@@ -19,7 +19,7 @@ jobs:
         run: dotnet tool update -g dotnet-format
 
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
 
       - name: Build
         run: dotnet build
@@ -36,7 +36,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
@@ -57,7 +57,7 @@ jobs:
         Rid: [generic, win-x64, win-x86]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           submodules: true
 
@@ -88,7 +88,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
@@ -112,7 +112,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.1.0
         with:
           submodules: true
 
